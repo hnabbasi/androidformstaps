@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AndroidMultiTaps.PageAView"
+		Title="{Binding Title}">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="Center">
+		<Label Text="{Binding Message}" VerticalOptions="Center" HorizontalOptions="Center">
+			<Label.GestureRecognizers>
+				<TapGestureRecognizer Command="{Binding GoToPageBCommand}"/>
+			</Label.GestureRecognizers>
+			</Label>
+			<Button Text="Go to B" Command="{Binding GoToPageBCommand}" />
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
